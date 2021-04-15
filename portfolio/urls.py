@@ -22,5 +22,5 @@ urlpatterns = [
     path("register/", user_views.register, name="registerr"),
     path("login/", user_views.login, name="login"),
     path("projects/", include("projects.urls")),
-    path("blog/", include("blog.urls")),
+    path("", include("blog.urls")),
 ]
